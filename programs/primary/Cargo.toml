@@ -13,17 +13,17 @@ no-entrypoint = []
 cpi = ["no-entrypoint"]
 
 [dependencies]
-pinocchio = { version = "0.11.1", features = ["cpi"] }
+pinocchio = { version = "0.11.2", features = ["cpi"] }
 solana-address = { version = "2", features = ["decode"] }
 solana-program-log = "1"
 
 [dev-dependencies]
 # We use the `sbpf-debugger` feature of `litesvm` to run the program in a local
 # test environment and to honor `SBF_TRACE_DIR` / `SBF_DEBUG_PORT` for Gimlet.
-litesvm = { version = "0.13.0", features = ["sbpf-debugger"] }
+litesvm = { version = "0.18.1", features = ["sbpf-debugger"] }
 solana-address = "2"
 solana-instruction = "3"
 solana-keypair = "3"
-solana-message = "3"
+solana-message = "4"
 solana-signer = "3"
-solana-transaction = "3"
+solana-transaction = "4"

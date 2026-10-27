@@ -5,7 +5,7 @@ clean:
 	@rm -rf $$PWD/programs/primary/target
 
 build:
-	@cargo-build-sbf --tools-version v1.54 --debug --arch v1
+	@cargo-build-sbf --tools-version v1.58 --debug --arch v1
 
 test:
 	@SBF_OUT_DIR=$$PWD/target/deploy/debug \

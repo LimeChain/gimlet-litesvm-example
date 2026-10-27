@@ -13,7 +13,7 @@ primary  ─── CPI ───▶  cpi_target
 > The trace-emitting and debugger-attach behavior described below **only works** because this repo depends on:
 >
 > ```toml
-> litesvm = { version = "0.13.0", features = ["sbpf-debugger"] }
+> litesvm = { version = "0.18.1", features = ["sbpf-debugger"] }
 > ```
 >
 > - `litesvm` `0.13.0` or later is required — these are the builds that honor `SBF_TRACE_DIR` and `SBF_DEBUG_PORT`.
@@ -36,7 +36,7 @@ cargo build-sbf --version
 ## Build
 
 ```sh
-cargo-build-sbf --tools-version v1.54 --debug --arch v1
+cargo-build-sbf --tools-version v1.58 --debug --arch v1
 ```
 
 > **Why this?** `cargo build-sbf` step builds with SBPFv1 (`--arch v1`), debug symbols, and no optimizations — required for accurate coverage results.

@@ -13,6 +13,6 @@ no-entrypoint = []
 cpi = ["no-entrypoint"]
 
 [dependencies]
-pinocchio = "0.11.1"
+pinocchio = "0.11.2"
 solana-address = { version = "2", features = ["decode"] }
 solana-program-log = "1"
